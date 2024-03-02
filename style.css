@@ -1,3 +1,103 @@
 body {
-    height: 100vh;
+    height: 100vhOne;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows: 1fr 7fr;
+}
+
+.sidebar {
+    background-color: teal;
+    grid-row: 1 / 3;
+    display: grid;
+    grid-template-rows: 0.25fr 1fr 1fr 5fr;
+    align-items: center;
+}
+
+li {
+    list-style: none;
+}
+
+.sidehead {
+    display: grid;
+    justify-content: center;
+}
+
+.header {
+    background-color: rgb(247, 241, 165);
+    display: grid;
+    align-items: center;
+}
+
+.headerTop{
+    display:grid;
+    grid-template-columns: 1fr 6fr 1fr 1fr 2fr;
+
+}
+
+.headerBottom {
+    display:grid;
+    grid-template-columns: 1fr 6fr 1fr 1fr 1fr;
+
+}
+
+.maincontent {
+    background-color: pink;
+    grid-column-start: 2;
+    grid-row-start: 2;
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: 1fr 8fr;
+    gap: 2em;
+ 
+
+}
+.yourProjects > div {
+    background-color: green;
+}
+
+.yourProjects {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 2em;
+    height: 150px;
+}
+
+.announcements {
+    background-color: peachpuff;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    padding: 15px;
+    text-wrap: wrap;
+}
+
+.trending {
+    background-color: aquamarine;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    padding: 15px;
+    
+}
+
+.iconStar {
+  
+}
+.rightMain {
+    display: grid;
+
+}
+input {
+    height: 1.5em;
+}
+
+.topOne, .topTwo, .topThree, .topFour {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+}
+
+.userOneProj, .userTwoProj, .userThreeProj, .userFourProj {
+    grid-column: 2 / 3;
 }
